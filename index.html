@@ -4,6 +4,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="">
+	<meta name="author" content="">
+	<meta name="format-detection" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:locale" content="">
+	<meta name="twitter:card" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<link rel="canonical" href="">
+	<link rel="icon" href="">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
 		rel="stylesheet" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
@@ -12,23 +30,26 @@
 	<title>PMG</title>
 </head>
 
-<body class="font-sans">
-	<header class="bg-white border-b relative">
+<body class="font-sans pt-[127px]">
+	<header class="bg-white border-b fixed top-0 left-0 w-full z-50">
 		<div class="max-w-7xl mx-auto px-6">
 			<div class="flex items-center justify-between py-8">
-				<div> <img src="./Image/logo.svg" alt="PMG" class="logoImg"> </div>
+				<a href="#top" class="inline-block" aria-label="ホーム">
+					<img src="./Image/logo.svg" alt="PMG" class="logoImg">
+				</a>
 				<div class="flex items-center gap-12">
-					<nav class="hidden lg:flex items-center gap-8 text-sm text-gray-700"> <a href="#"
-							class="text-[16px] text-[#2B2B2B]">選ばれる理由</a> <a href="#"
-							class="text-[16px] text-[#2B2B2B]">事例</a> <a href="#"
-							class="text-[16px] text-[#2B2B2B]">支援体制</a> <a href="#"
-							class="text-[16px] text-[#2B2B2B]">会社比較</a> <a href="#"
+					<nav class="hidden lg:flex items-center gap-8 text-sm text-gray-700"> <a href="#reasons"
+							class="text-[16px] text-[#2B2B2B]">選ばれる理由</a> <a href="#cases"
+							class="text-[16px] text-[#2B2B2B]">事例</a> <a href="#support"
+							class="text-[16px] text-[#2B2B2B]">支援体制</a> <a href="#comparison"
+							class="text-[16px] text-[#2B2B2B]">会社比較</a> <a href="#faq"
 							class="text-[16px] text-[#2B2B2B]">FAQ</a> </nav>
 					<div class="hidden lg:flex items-center gap-6">
 						<div class="text-center">
-							<div class="text-xl font-semibold text-[20px] text-[#2B2B2B]"> 0120-901-680 </div>
+							<a href="tel:0120901680"
+								class="text-xl font-semibold text-[20px] text-[#2B2B2B] no-underline hover:text-red-700 block">0120-901-680</a>
 							<div class="text-xs text-gray-500 text-[10px] text-[#888]"> 9:00〜20:00 土日対応 </div>
-						</div> <a href="#"
+						</div> <a href="#consultation"
 							class="buttonBG bg-red-700 hover:bg-red-800 text-white px-6 py-3 min-w-[140px] text-center rounded font-semibold">
 							無料相談
 						</a>
@@ -43,11 +64,12 @@
 			</div>
 		</div>
 		<div id="mobileMenu" class="hidden lg:hidden absolute top-full left-0 w-full bg-white border-t shadow-lg z-50">
-			<div class="py-6 text-center space-y-4 text-sm"> <a href="#" class="block">選ばれる理由</a> <a href="#"
-					class="block">事例</a> <a href="#" class="block">支援体制</a> <a href="#" class="block">会社比較</a> <a
-					href="#" class="block">FAQ</a>
+			<div class="py-6 text-center space-y-4 text-sm nav-mobile-links"> <a href="#reasons" class="block">選ばれる理由</a> <a href="#cases"
+					class="block">事例</a> <a href="#support" class="block">支援体制</a> <a href="#comparison" class="block">会社比較</a> <a
+					href="#faq" class="block">FAQ</a>
 				<div class="pt-3">
-					<div class="font-semibold"> 0120-901-680 </div> <a href="#"
+					<a href="tel:0120901680"
+						class="font-semibold block no-underline hover:text-red-700">0120-901-680</a> <a href="#consultation"
 						class="inline-block mt-3 bg-red-700 text-white px-5 py-2 rounded">
 						無料相談
 					</a>
@@ -55,7 +77,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="relative overflow-hidden bg-[#eef7fb] py-12 md:py-24">
+	<section id="top" class="relative overflow-hidden bg-[#eef7fb] py-12 md:py-24">
 		<div class="absolute inset-0 bg-center bg-cover" style="background-image:url('./Image/bg.png');"> </div>
 		<div class="relative max-w-[1320px] mx-auto px-5">
 			<div class="grid lg:grid-cols-[1fr_480px] gap-10 items-start">
@@ -130,7 +152,7 @@
 					<div class="grid grid-cols-2 gap-4 mt-8">
 						<a href="#" class="cta-red cta-card bannerCTA font-semibold"> <span class="cta-shine"></span>
 							30秒で無料相談する </a>
-						<a href="#" class="cta-green cta-card bannerCTA"> <span class="cta-shine"></span>
+						<a href="tel:0120901680" class="cta-green cta-card bannerCTA"> <span class="cta-shine"></span>
 							<div class="text-[11px] md:text-[24px] font-semibold">電話で相談</div>
 							<div class="flex gap-2 items-center text-[9px] md:text-[20px] font-semibold">
 								<svg width="23" height="22" viewBox="0 0 23 22" fill="none"
@@ -144,7 +166,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="consultation-form">
+				<div id="consultation" class="consultation-form scroll-mt-28">
 					<div class="form-tag"> まずは無料でお問い合わせ </div>
 					<div class="form-inner">
 						<h2 class="form-title">
@@ -264,7 +286,7 @@
 					<span class="relative inline-block funding-title-highlight">
 						借り入れに頼らず、
 						<span
-							class="absolute left-0 top-[26px] mt-[15px] pt-[10px] pb-[10px] w-[334px] h-[6px] md:h-[10px] bg-[#f4c7c7] -z-10"></span>
+							class="absolute left-0 top-[7px] md:top-[26px] mt-[15px] pt-[5px] pb-[5px] md:pt-[10px] md:pb-[10px] h-[6px] md:h-[10px] w-[185px] md:w-auto md:right-0 bg-[#f4c7c7] -z-10"></span>
 					</span>
 					<br class="md:hidden">
 					売掛金を資金化する方法
@@ -293,7 +315,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="bg-[linear-gradient(to_bottom,#d92f26_0%,#bb1d17_35%,#8c0d0d_75%,#650505_100%)] py-12 md:py-24"
+	<section id="reasons" class="bg-[linear-gradient(to_bottom,#d92f26_0%,#bb1d17_35%,#8c0d0d_75%,#650505_100%)] py-12 md:py-24 scroll-mt-28"
 		data-aos="fade-up">
 		<div class="max-w-[1320px] mx-auto px-4">
 			<h2 class="text-center text-white text-[24px] md:text-[42px] font-bold mb-8 md:mb-8">
@@ -327,7 +349,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="py-12 md:py-24 bg-[#f8f8f8]" data-aos="fade-up">
+	<section id="cases" class="py-12 md:py-24 bg-[#f8f8f8] scroll-mt-28" data-aos="fade-up">
 		<div class="max-w-[1140px] mx-auto px-4">
 			<div class="text-center">
 				<div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
@@ -393,7 +415,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="support-section bg-[#f8eded] py-12 md:py-24" data-aos="fade-up">
+	<section id="support" class="support-section bg-[#f8eded] py-12 md:py-24 scroll-mt-28" data-aos="fade-up">
 		<div class="max-w-[1320px] mx-auto px-4">
 			<div class="flex flex-col md:flex-row items-center md:items-end justify-center">
 				<div class="text-center">
@@ -455,11 +477,11 @@
 				<h3>あなたの会社にPMGが合うか確認できます</h3>
 				<p> 無料相談・しつこい営業電話なし・個人情報厳重管理 </p>
 				<div class="cta-btns"> <a href="#" class="font-bold text-[24px]">無料相談する</a>
-					<a href="#"> <span class="font-bold text-[24px]">0120-901-680</span> <span
+					<a href="tel:0120901680"> <span class="font-bold text-[24px]">0120-901-680</span> <span
 							class="font-semibold text-[10px]">8:00〜20:00 / 土日対応</span> </a>
 				</div>
 			</div>
-			<div class="text-center mt-10 md:mt-16">
+			<div id="comparison" class="text-center mt-10 md:mt-16 scroll-mt-28">
 				<div class="inline-flex flex-wrap items-center gap-3"> <span class="compare-label">
 						徹底<span style="color: #C1291F;">比</span>較 </span>
 					<h2 class="text-[#C1291F] font-bold text-[26px] md:text-[42px]">
@@ -976,7 +998,8 @@
 				</h3>
 				<p> 無料相談・しつこい営業電話なし・個人情報厳重管理 </p>
 				<div class="cta-buttons">
-					<a href="#" class="cta-white"> <span>無料相談する</span> </a> <a href="#" class="cta-outline">
+					<a href="#" class="cta-white"> <span>無料相談する</span> </a> <a href="tel:0120901680"
+						class="cta-outline">
 						0120-901-680
 						<span class="text-[10px]">9:00〜20:00 / 土日対応</span>
 					</a>
@@ -1052,7 +1075,7 @@
 						<div class="cert-badge-detail">独立系ファクタリング企業<br>売上5年連続No.1</div>
 					</div>
 					<div class="cert-badge">
-						<div class="cert-badge-title">日本マーケティングリサーチ機構</div>
+						<div class="cert-badge-title">日本マーケティング<br>リサーチ機構</div>
 						<div class="cert-badge-detail">ファクタリングサービス<br>2026年1月調査 5冠達成</div>
 					</div>
 					<div class="cert-badge">
@@ -1179,7 +1202,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="bg-[#C1291F1A] py-[50px] md:py-[100px]" data-aos="fade-up">
+	<section id="faq" class="bg-[#C1291F1A] py-[50px] md:py-[100px] scroll-mt-28" data-aos="fade-up">
 		<div class="max-w-[1320px] mx-auto px-5">
 			<div class="text-center mb-[50px]">
 				<h2 class="text-[#C1291F] text-[24px] md:text-[42px] font-bold">
@@ -1304,7 +1327,7 @@
 						<div class="text-[20px] font-medium mt-[8px]"> 365日24時間対応 </div>
 					</div>
 				</a>
-				<a href="#" class="cta-card cta-green"> <span class="cta-shine"></span>
+				<a href="tel:0120901680" class="cta-card cta-green"> <span class="cta-shine"></span>
 					<div class="relative z-10">
 						<div class="text-[24px] font-bold"> 電話で今すぐ相談 </div>
 						<div class="text-[30px] font-medium leading-none mt-[8px]"> 0120-901-680 </div>
